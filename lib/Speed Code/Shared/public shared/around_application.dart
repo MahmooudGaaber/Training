@@ -1,5 +1,6 @@
  import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:training/Speed%20Code/Screens/detail_screen.dart';
 
 
 
@@ -59,10 +60,14 @@ import 'package:flutter/material.dart';
   );
  }
 
- Widget buildSingleItem({ itemHeight , itemWidth , image , title , subTitle , price , rating })
+ Widget buildSingleItem({ itemHeight , itemWidth , image , title , subTitle , price , rating ,context })
  {
   return GestureDetector(
-   onTap: (){},
+   onTap: (){
+    Navigator.of(context).push(
+        MaterialPageRoute(builder: (context)=> DetailPage(),
+        ));
+   },
     child: Container(
     height: itemHeight,
      width:itemWidth ,

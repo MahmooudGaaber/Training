@@ -134,6 +134,7 @@ class HomePage extends StatelessWidget
                   child: Row(
                     children: [
                       buildSingleItem(
+                          context: context,
                           itemHeight:screenHight*0.3,
                           itemWidth:screenWidth*0.4+10,
                           image: "assets/images/coffee1.jpeg",
@@ -144,6 +145,7 @@ class HomePage extends StatelessWidget
                       ),
 
                       buildSingleItem(
+                        context: context,
                         itemHeight:screenHight*0.3,
                         itemWidth:screenWidth*0.4+10,
                         image: "assets/images/coffee8.jpeg",
@@ -154,6 +156,7 @@ class HomePage extends StatelessWidget
                       ),
 
                       buildSingleItem(
+                        context: context,
                         itemHeight:screenHight*0.3,
                         itemWidth:screenWidth*0.4+10,
                         image: "assets/images/coffee2.jpeg",
@@ -164,6 +167,7 @@ class HomePage extends StatelessWidget
                       ),
 
                       buildSingleItem(
+                        context: context,
                         itemHeight:screenHight*0.3,
                         itemWidth:screenWidth*0.4+10,
                         image: "assets/images/coffee4.jpeg",
@@ -174,6 +178,7 @@ class HomePage extends StatelessWidget
                       ),
 
                       buildSingleItem(
+                        context: context,
                         itemHeight:screenHight*0.3,
                         itemWidth:screenWidth*0.4+10,
                         image: "assets/images/coffee5.jpeg",
@@ -184,6 +189,7 @@ class HomePage extends StatelessWidget
                       ),
 
                       buildSingleItem(
+                        context: context,
                         itemHeight:screenHight*0.3,
                         itemWidth:screenWidth*0.4+10,
                         image: "assets/images/coffee6.jpeg",
@@ -194,6 +200,7 @@ class HomePage extends StatelessWidget
                       ),
 
                       buildSingleItem(
+                        context: context,
                         itemHeight:screenHight*0.3,
                         itemWidth:screenWidth*0.4+10,
                         image: "assets/images/coffee7.jpeg",
