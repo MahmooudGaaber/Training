@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import 'Fast Food/detail_screen/detail_screen.dart';
+import 'Fast Food/welcome_screen/wellcome_screen.dart';
+import 'Speed Code/Screens/bottom_page.dart';
 
 void main() {
   runApp(const MyApp());
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    systemNavigationBarColor: Color(0xff0c0f14),
+    statusBarColor: Color(0xff0c0f14),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -10,11 +19,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowMaterialGrid: false,
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:   BottomPage(),
     );
   }
 }
