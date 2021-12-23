@@ -283,7 +283,7 @@ class HomePage extends StatelessWidget
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children:   [
                                     Row(
-                                      children: [
+                                      children: const [
                                         Text(
                                           "\$\t",
                                           style: TextStyle(

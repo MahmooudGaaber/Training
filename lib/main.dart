@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 
 import 'Fast Food/detail_screen/detail_screen.dart';
 import 'Fast Food/welcome_screen/wellcome_screen.dart';
+import 'Logo Screens/Screens/profile.dart';
+import 'Logo Screens/Screens/public.dart';
 import 'Speed Code/Screens/bottom_page.dart';
 
 void main() {
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:   BottomPage(),
+      home:   PublicScreen(),
     );
   }
 }
