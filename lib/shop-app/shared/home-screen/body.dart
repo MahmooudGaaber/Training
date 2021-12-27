@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:training/Fast%20Food/detail_screen/detail_screen.dart';
 import 'package:training/shop-app/models/product.dart';
 
 import '../../constant.dart';
@@ -8,7 +8,6 @@ import 'item_card.dart';
 
 class BuildBody extends StatelessWidget {
   const BuildBody({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -30,9 +29,9 @@ class BuildBody extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
             child: GridView.builder(
-              physics: const BouncingScrollPhysics(),
+              physics:  const BouncingScrollPhysics(),
               itemCount: products.length,
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                gridDelegate:  const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   mainAxisSpacing:kDefaultPadding ,
                   crossAxisSpacing: kDefaultPadding,
@@ -41,6 +40,14 @@ class BuildBody extends StatelessWidget {
                 itemBuilder: (context , index){
                   return  ItemCard(
                     product: products[index],
+                    press: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context)=>DetailScreen(
+
+                        ),
+                      ),
+                    ),
                   );
                 },
             ),
